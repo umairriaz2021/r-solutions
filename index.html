@@ -13,7 +13,7 @@
 <body>
     <section class="main-section">
       <div class="row">
-        <div class="col-xl-2 col-lg-2 col-md-2 col-xs-12 col-12 sidebar">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-xs-12 col-12 sidebar2">
           <div class="profileName">
             <h2>Umair Riaz</h2>
                <p>Sr. Fullstack Developer</p>
@@ -41,7 +41,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-xl-10 col-lg-10 col-md-10 col-xs-12 col-12">
+        <div class="col-xl-10 col-lg-10 col-md-10 col-xs-12 col-12 sidebar">
           <div class="mainWrapper">
             <div class="main-heading d-flex justify-content-center flex-column align-items-center">
                   <h1 class="main-heading">Web Developement Services</h1>
@@ -457,6 +457,7 @@
         </div> 
       </div>
       </div>
+       <hr class="mt-4  mb-4" />
     </div>
 
     <!-- Shopify -->
@@ -503,6 +504,7 @@
         </div> 
       </div>
       </div>
+     <hr class="mt-4  mb-4" />
     </div>
 
     <!-- Laravel -->
@@ -529,7 +531,8 @@
         </div> 
       </div>
     </div>
-    </div>
+   <hr class="mt-4  mb-4" />  
+  </div>
 
     <!-- React -->
     <div class="col-md-12 mb-4 project-box category-react">
@@ -546,17 +549,18 @@
       </div>
         
       </div>
+      <!-- <hr class="mt-4  mb-4" /> -->
     </div>
 
     <!-- Squarespace -->
-    <div class="col-md-12 mb-4 project-box category-squarespace">
+    <!-- <div class="col-md-12 mb-4 project-box category-squarespace">
       <div class="card"> <div class="card-body">Squarespace Project 1</div> </div>
-    </div>
+    </div> -->
 
     <!-- Webflow -->
-    <div class="col-md-12 mb-4 project-box category-webflow">
+    <!-- <div class="col-md-12 mb-4 project-box category-webflow">
       <div class="card"> <div class="card-body">Webflow Project 1</div> </div>
-    </div>
+    </div> -->
 
     <!-- Add more projects with the same category classes as needed -->
   </div>      
@@ -585,8 +589,11 @@
       $(this).addClass("active");
 
       if (filterValue == "all") {
+        $(".project-box").append('<hr class="mt-4 mb-4" />');
         $(".project-box").show("300");
+       
       } else {
+        $('hr').remove();
         $(".project-box").not(".category-" + filterValue).hide("300");
         $(".project-box.category-" + filterValue).show("300");
       }
