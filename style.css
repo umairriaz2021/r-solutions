@@ -283,6 +283,7 @@ p.sub-heading {
 
     grid-template-columns: 100%;
     grid-row-gap:20px;
+    
 }
 .profile-content p {
     line-height: 1.5rem;
@@ -292,4 +293,75 @@ p.sub-heading {
 .profileCol:first-child {
     order: 2;
 }
+.profileName {
+    padding-top: 40px;
+    text-align: center;
+}
+.sidebar2 {
+  
+    text-align: center;
+    margin: 0 auto;
+}
+.socialslinks ul {
+
+    justify-content: center;
+    text-align: left;
+}
+.sidebar{
+    text-align:center;
+}
+.servicesWrapper {
+    grid-template-columns:100%;
+}
+.portfolio-check{
+    grid-template-columns:100%;
+}
+}
+@media (max-width:1024px)
+{
+    .profileWrapper {
+
+    grid-template-columns: 100%;
+    grid-row-gap:20px;
+    
+}
+.profile-content p {
+    line-height: 1.5rem;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+.profileCol:first-child {
+    order: 2;
+}
+.profileName {
+    padding-top: 40px;
+    text-align: center;
+}
+.sidebar2 {
+  
+    text-align: center;
+    margin: 0 auto;
+}
+.socialslinks ul {
+
+    justify-content: center;
+    text-align: left;
+}
+.sidebar{
+    text-align:center;
+}
+    .servicesWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolio-check {
+        grid-template-columns: 1fr 1fr;
+    }
+        .sidebar{
+            flex:0 0 auto;
+            width:70%;
+        }
+        .sidebar2{
+            flex:0 0 auto;
+            width:30%;
+        }
 }
