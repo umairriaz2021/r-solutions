@@ -276,3 +276,20 @@ p.sub-heading {
 .my-float{
 	margin-top:16px;
 }
+
+@media (max-width:767px)
+{
+    .profileWrapper {
+
+    grid-template-columns: 100%;
+    grid-row-gap:20px;
+}
+.profile-content p {
+    line-height: 1.5rem;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+.profileCol:first-child {
+    order: 2;
+}
+}
